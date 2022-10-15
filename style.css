@@ -41,6 +41,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  padding: 2rem 7%;
+}
+
 html::-webkit-scrollbar {
   width: .8rem;
 }
@@ -116,6 +120,10 @@ body {
   transform-origin: top;
 }
 
+.header .search-form.active {
+  transform: scaleY(1);
+}
+
 .header .search-form input {
   height: 100%;
   width: 100%;
@@ -145,6 +153,10 @@ body {
   width: 35rem;
   background: #fff;
   padding: 0 1.5rem;
+}
+
+.header .cart-items-container.active {
+  right: 0;
 }
 
 .header .cart-items-container .cart-item {
@@ -194,6 +206,28 @@ body {
   text-align: center;
 }
 
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./Images/home-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,5 +240,50 @@ body {
 
   .header {
     padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+    z-index: 100;
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    display: block;
+    color: var(--black);
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2rem;
+  }
+
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  html {
+    font-size: 55%;
   }
 }

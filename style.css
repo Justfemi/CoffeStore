@@ -430,8 +430,6 @@ body {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
-  background: red;
-  height: 45.3rem;
 }
 
 .contact .row form{

@@ -15,7 +15,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: .2s linear;
 }
 
@@ -28,6 +27,7 @@
   background: var(--main-color);
   cursor: pointer;
   letter-spacing: .2rem;
+  text-transform: capitalize;
 }
 
 .btn:hover {
@@ -43,6 +43,19 @@ html {
 
 section {
   padding: 2rem 7%;
+  text-transform: capitalize;
+}
+
+section .heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3.5rem;
+}
+
+section .heading span {
+  color: var(--main-color);
 }
 
 html::-webkit-scrollbar {
@@ -74,6 +87,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
+  text-transform: capitalize;
 }
 
 .header .logo img {
@@ -215,6 +229,59 @@ body {
   background-position: center;
 }
 
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .2rem;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  line-height: 1.8;
+  font-weight: lighter;
+  padding: 1rem 0;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  background: var(--black);
+  flex-wrap: wrap;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+
+
 
 
 
@@ -278,6 +345,20 @@ body {
   .header .search-form {
     width: 90%;
     right: 2rem;
+  }
+
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
   }
 }
 
